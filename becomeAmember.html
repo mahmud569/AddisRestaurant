@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>Become a Member</title>
+</head>
+<body>
+
+    <div class="about">
+         
+        <nav>
+           <a href="index.html"><img src="logo.jpeg" ></a>
+           <div class="links" id="navlinks">
+             <i class="fa fa-times" onclick="hidemenu()"></i>
+       <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="login.html">Login</a> </li>
+       </ul>
+           </div>
+           <div class="faa">
+               <i class="fa fa-bars" onclick="showmenu()"></i>
+              </div>
+       </nav> 
+   </div>
+   
+    <div class="container--2">
+        <div class="h1register">
+          <h1>Become a Member Now <img src="https://img.icons8.com/ios-filled/50/000000/remove-user-group-man-man.png"/></h1>  
+        </div>
+        
+        <form name="registration" class="registartion-form" onsubmit="return formValidation()">
+          <table>
+            <tr>
+              <td><label for="name">Name:</label></td>
+              <td><input type="text" name="name" id="name" placeholder="your name"></td>
+            </tr>
+            <tr>
+              <td><label for="email">Email:</label></td>
+              <td><input type="text" name="email" id="email" placeholder="your email"></td>
+            </tr>
+            <tr>
+              <td><label for="password">Password:</label></td>
+              <td><input type="password" name="password" id="password"></td>
+            </tr>
+            <tr>
+              <td><label for="phoneNumber">Phone Number:</label></td>
+              <td><input type="number" name="phoneNumber" id="phoneNumber"></td>
+            </tr>
+            <tr>
+              <td><label for="gender">Gender:</label></td>
+              <td>
+                Male: <input type="radio" name="gender" value="male" class="radio">
+                Female: <input type="radio" name="gender" value="female"class="radio" >
+                Other: <input type="radio" name="gender" value="other" class="radio">
+              </td>
+            </tr>
+            <tr>
+              <td><label for="language">language</label></td>
+              <td>
+                <select name="language" id="language">
+                  <option value="">Select language</option>
+                  <option value="English">English</option>
+                  <option value="Spanish">Spanish</option>
+                  <option value="Hindi">Hindi</option>
+                  <option value="Arabic">Arabic</option>
+                  <option value="Russian">Russian</option>
+                   <option value="Amharic">Amharic</option>
+                </select>
+              </td>
+            </tr>
+            <tr>
+              <td><label for="zipcode">Zip Code:</label></td>
+              <td><input type="number" name="zipcode" id="zipcode"></td>
+            </tr>
+            <tr>
+              <td><label for="about">About:</label></td>
+              <td><textarea name="about" id="about" placeholder="Write about yourself..."></textarea></td>
+            </tr>
+            <tr>
+              <td colspan="2"><input type="submit" class="submit" value="Register" /></td>
+            </tr>
+          </table>
+        </form>
+      </div>
+
+
+      <div class="alert">
+        <span class="closebtn33" onclick="this.parentElement.style.display='none';">&times;</span> 
+        <strong>Note!</strong> Becoming a member of our restaurant means you will get offers on all meals, you can be a part of developing our restaurant by sharing your feedback, and you can earn points to win a mobile phone or cash money. 
+      </div>
+</body>
+</html>
